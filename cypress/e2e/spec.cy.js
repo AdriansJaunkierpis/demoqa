@@ -30,9 +30,9 @@ describe('Demoqa test', () => {
       DemoqaPage.inputSubjects.type("Maths{enter}");
       DemoqaPage.pickOption.contains("Sports").click();
       DemoqaPage.inputAddress.type("Ventspils Latvia");
-      DemoqaPage.openState.click();
+      DemoqaPage.openState.click({force: true});
       DemoqaPage.pickState.type("Haryana{enter}");
-      DemoqaPage.openCity.click();
+      DemoqaPage.openCity.click({force: true});
       DemoqaPage.pickCity.type("Panipat{enter}");
       DemoqaPage.buttonSubmit.click({force: true});
       //validate
